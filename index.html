@@ -1,133 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="XiaoBaoApp" lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: auto;
-	  height: 700px;
-	  max-height: 700px;
-      margin: auto;
-  }
-  /*
-  body {
-    background: url(img/frozen-background-1.jpg);
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(img/frozen-background-1.jpg);
-  }
-  */
-  </style>
-</head>
-<body>
+<title>XiaoBao</title>
+<!-- see http://getbootstrap.com/css/#overview-mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.united.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/flexslider.css">
 <!--
-<nav class="navbar navbar-default">
-  <div class="container">
-    <br>
-    <div class=navbar-header">
-      <div class="navbar-header">
-        <div class="navbar-brand">Xiao Bao</div>
-      </div>
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Games</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
 -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js"></script>
+<script src="js/angular-flexslider.js"></script>
+<script src="js/ui-bootstrap-tpls-1.1.1.min.js"></script> 
+</head>
 
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+<body ng-cloak ng-controller="PageController">
+
+<header ng-controller="NavController" class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/">XiaoBao</a>
     </div>
+    <nav class="navbar-collapse collapse">
+      <ul class="navbar-nav nav">
+        <li ng-repeat="item in menuitems.topbar" ng-class="{ active : location.path() == item.path }"><a href="#{{item.path}}">{{item.label}}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<script>
-jQuery(document).ready(function ($) {
-    var images = [{
-        url: "img/1.jpg"
-    }, {
-        url: "img/2.jpg"
-    }, {
-        url: "img/3.jpg"
-    }, {
-        url: "img/4.jpg"
-    }, {
-        url: "img/5.jpg"
-    }, {
-        url: "img/6.jpg"
-    }, {
-        url: "img/7.jpg"
-    }, {
-        url: "img/8.jpg"
-    }, {
-        url: "img/9.jpg"
-    }, {
-        url: "img/10.jpg"
-    }, {
-        url: "img/11.jpg"
-    }, {
-        url: "img/12.jpg"
-    }, {
-        url: "img/13.jpg"
-    }, {
-        url: "img/14.jpg"
-    }, {
-        url: "img/15.jpg"
-    }, {
-        url: "img/16.jpg"
-    }, {
-        url: "img/17.jpg"
-    }, {
-        url: "img/18.jpg"
-    }, {
-        url: "img/19.jpg"
-    }, {
-        url: "img/20.jpg"
-    }, {
-        url: "img/21.jpg"
-    }, {
-        url: "img/22.jpg"
-    }, {
-        url: "img/23.jpg"
-    }, {
-        url: "img/24.jpg"
-    }, {
-        url: "img/25.jpg"
-    }];
+<div class="container-fluid marketing" ng-view>
+</div>
 
-    // http://css-tricks.com/snippets/javascript/shuffle-array/
-    images.sort(function () { return 0.5 - Math.random(); });
+<script src="js/app.js"></script>
 
-    $.each(images, function (index, image) {
-
-        var element = $('<div class="item"><a href="#"><img src="' + image.url + '" alt="' + image.alt + '" width="460" height="345"/></a></div>')
-
-        if (index === 0) {
-            element.addClass("active");   
-        }
-
-        element.appendTo("div.carousel-inner");
-    });
-
-    $('.carousel').carousel({
-      interval: 4000,
-    })
-});
-</script>
 </body>
 </html>

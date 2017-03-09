@@ -1,0 +1,9 @@
+<div class="row" ng-controller="SlideController">
+    <div class="col-sm-12">
+        <flex-slider flex-slide="pic in pictures track by pic.url" randomize=true slideshow-speed=4000 animation=slide>
+            <li>
+                <img ng-src="{{pic.url}}">
+            </li>
+        </flex-slider>
+    </div>
+</div>
