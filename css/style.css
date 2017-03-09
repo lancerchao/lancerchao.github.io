@@ -1,0 +1,130 @@
+/**
+ * This file is written in sass, compile with 'node-sass style.scss' to get the
+ * actual .css file.
+ */
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  -webkit-transform: translateX(-250px) translateY(-800px) rotateX(25deg) rotateY(-25deg);
+  -moz-transform: translateX(-250px) translateY(-800px) rotateX(25deg) rotateY(-25deg);
+  -ms-transform: translateX(-250px) translateY(-800px) rotateX(25deg) rotateY(-25deg);
+  -o-transform: translateX(-250px) translateY(-800px) rotateX(25deg) rotateY(-25deg);
+  transform: translateX(-250px) translateY(-800px) rotateX(25deg) rotateY(-25deg);
+  width: 2000px;
+  height: 4000px;
+  opacity: 1;
+  z-index: -1; }
+
+.bg-code1 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code1.png') repeat 0 0; }
+
+.bg-code2 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code2.png') repeat 0 0; }
+
+.bg-code3 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code3.png') repeat 0 0; }
+
+.bg-code4 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code4.png') repeat 0 0; }
+
+.bg-code5 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code5.png') repeat 0 0; }
+
+.bg-code6 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code6.png') repeat 0 0; }
+
+.bg-code7 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code7.png') repeat 0 0; }
+
+.bg-code8 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code8.png') repeat 0 0; }
+
+.bg-code9 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code9.png') repeat 0 0; }
+
+.bg-code10 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code10.png') repeat 0 0; }
+
+.bg-code11 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code11.png') repeat 0 0; }
+
+.bg-code12 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code12.png') repeat 0 0; }
+
+.bg-code13 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code13.png') repeat 0 0; }
+
+.bg-code14 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code14.png') repeat 0 0; }
+
+.bg-code15 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code15.png') repeat 0 0; }
+
+.bg-code16 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code16.png') repeat 0 0; }
+
+.bg-code17 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code17.png') repeat 0 0; }
+
+.bg-code18 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code18.png') repeat 0 0; }
+
+.bg-code19 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code19.png') repeat 0 0; }
+
+.bg-code20 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code20.png') repeat 0 0; }
+
+.bg-code21 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code21.png') repeat 0 0; }
+
+.bg-code22 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code22.png') repeat 0 0; }
+
+.bg-code23 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code23.png') repeat 0 0; }
+
+.bg-code24 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code24.png') repeat 0 0; }
+
+.bg-code25 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code25.png') repeat 0 0; }
+
+.bg-code26 {
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../images/background/code26.png') repeat 0 0; }
+
+p, h1, h2, h3, h4, h5, h6, dd, dt {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px; }
+
+/* Side notes for calling out things
+-------------------------------------------------- */
+/* Base styles (regardless of theme) */
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee; }
+
+.bs-callout h4 {
+  margin-top: 0; }
+
+.bs-callout p:last-child {
+  margin-bottom: 0; }
+
+.bs-callout code, .bs-callout .highlight {
+  background-color: #fff; }
+
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4; }
+
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc; }
+
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0; }
