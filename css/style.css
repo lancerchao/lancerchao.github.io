@@ -1,27 +1,33 @@
+video {
+  object-fit: cover;
+}
+
 @media only screen and (min-width: 959px) {
-    .img {
-        max-width: 50%;
-        max-height: 50%;
-        display: block;
-        margin-left: auto;
-                margin-right: auto;
-    }
+  .img {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 768px) {
-    .container {
-        width: 300px;
-    }
+  .container {
+    width: 300px;
+  }
 } 
+
 @media (min-width: 992px) {
-    .container {
-        width: 500px;
-    }
+  .container {
+    width: 500px;
+  }
 } 
+
 @media (min-width: 1200px) {
-    .container {
-        width: 700px;
-    }
+  .container {
+    width: 700px;
+  }
 }
 /*
 .bg-image {
@@ -32,36 +38,39 @@
 */
 
 @-webkit-keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
-    }
+  0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  50% { background-color: #b4cfe0 }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+    background-color: #6b92b9;
+  }
 }
+
 @-moz-keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
-    }
+  0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  50% { background-color: #b4cfe0 }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+    background-color: #6b92b9;
+  }
 }
+
 @-ms-keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
-    }
+  0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  50% { background-color: #b4cfe0 }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+    background-color: #6b92b9;
+  }
 }
+
 @keyframes snow {
-    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
-    }
+  0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+  50% { background-color: #b4cfe0 }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+    background-color: #6b92b9;
+  }
 }
 
 .bg-image {
