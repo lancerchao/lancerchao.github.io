@@ -1,0 +1,7 @@
+Functionality
+ - Play/pause button over video
+ - Separate games into actual pages
+
+Style
+ - Better animated background (frozen theme)
+ - Better looking navbar
