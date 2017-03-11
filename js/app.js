@@ -87,4 +87,21 @@ config(['$routeProvider', function($routeProvider) {
         
         scope.pictures = pics;
     }])
+.controller('VideoController', 
+    ['$scope',
+    function (scope) {
+        scope.pauseOrPlay = function(event) {
+            var parentdiv = angular.element(event.target).parent();
+            var video = parentdiv.find("video")[0];
+            var playpause = parentdiv.find(".playpause");
+
+            if (video.paused) {
+                playpause.fadeOut();
+                video.play();
+            } else {
+                playpause.fadeIn();
+                video.pause();
+            }
+        }
+    }])
 })();

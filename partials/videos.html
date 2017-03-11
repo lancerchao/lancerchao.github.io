@@ -1,15 +1,20 @@
-<div class="row">
-  <div class="col-sm-12">
-    <video controls style="width:640px;height:360px;" poster="videos/letitgo.jpg">
+<div class="row" ng-controller="VideoController">
+  <div class="col-sm-12" ng-click="pauseOrPlay($event)">
+    <div class="padding">
+      <video controls poster="videos/letitgo.jpg">
       <source src="videos/letitgo.mp4" 
               type="video/mp4" />
-    </video>    
+      </video>   
+      <div class="playpause"></div>
+    </div>
   </div>
-  
-  <div class="col-sm-12">
-    <video controls style="width:640px;height:360px;" poster="videos/firsttimeinforever.jpg">
-      <source src="videos/firsttimeinforever.mp4" 
-              type="video/mp4" />
-    </video>  
+  <div class="col-sm-12" ng-click="pauseOrPlay($event)">
+    <div class="padding">
+      <video controls poster="videos/firsttimeinforever.jpg" >
+        <source src="videos/firsttimeinforever.mp4" 
+                type="video/mp4" />
+      </video>  
+      <div class="playpause"></div>
+    </div>
   </div>
 </div>
