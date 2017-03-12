@@ -52,57 +52,27 @@ video {
     width: 700px;
   }
 }
-/*
-.bg-image {
-  background: linear-gradient(rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.85) 100%), url('../img/background/frozen-background-1.jpg') repeat 0 0;
-  opacity: 1;
-  z-index: -1; 
-}
-*/
-
-@-webkit-keyframes snow {
-  0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-  50% { background-color: #b4cfe0 }
-  100% {
-    background-position: 500px 1000px, 400px 400px, 300px 300px;
-    background-color: #6b92b9;
-  }
-}
-
-@-moz-keyframes snow {
-  0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-  50% { background-color: #b4cfe0 }
-  100% {
-    background-position: 500px 1000px, 400px 400px, 300px 300px;
-    background-color: #6b92b9;
-  }
-}
-
-@-ms-keyframes snow {
-  0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-  50% { background-color: #b4cfe0 }
-  100% {
-    background-position: 500px 1000px, 400px 400px, 300px 300px;
-    background-color: #6b92b9;
-  }
-}
 
 @keyframes snow {
   0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-  50% { background-color: #b4cfe0 }
+  50% { background-color: transparent }
   100% {
     background-position: 500px 1000px, 400px 400px, 300px 300px;
-    background-color: #6b92b9;
+    background-color: transparent;
   }
 }
 
 .bg-image {
-  background-color: #6b92b9;
+  //background-color: #6b92b9;
+  background-color: transparent;
   background-image: url('../img/background/BiSmXaq.png'), url('../img/background/XHuy0NJ.png'), url('../img/background/okpRxJU.png');
-  -webkit-animation: snow 20s linear infinite;
-  -moz-animation: snow 20s linear infinite;
-  -ms-animation: snow 20s linear infinite;
   animation: snow 20s linear infinite;
+}
+
+body {
+  background-image: url('../img/background/frozen-background-1.jpg');
+  background-size: cover;
+  height: 100%;
 }
 
 p, h1, h2, h3, h4, h5, h6, dd, dt {
